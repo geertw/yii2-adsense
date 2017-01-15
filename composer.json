@@ -1,0 +1,21 @@
+{
+    "name": "geertw/yii2-adsense",
+    "description": "Widget for displaying Google AdSense banners",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","google","adsense","adwords","widget"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Geert Wirken",
+            "email": "geert@gwirken.nl"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "geertw\\Yii2\\Adsense\\": ""
+        }
+    }
+}
