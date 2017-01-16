@@ -1,3 +1,7 @@
+[![Latest Stable Version](https://img.shields.io/packagist/v/geertw/yii2-adsense.svg)](https://packagist.org/packages/geertw/yii2-adsense)
+[![Total Downloads](https://img.shields.io/packagist/dt/geertw/yii2-adsense.svg)](https://packagist.org/packages/geertw/yii2-adsense)
+[![License](https://img.shields.io/packagist/l/geertw/yii2-adsense.svg)](https://packagist.org/packages/geertw/yii2-adsense)
+
 Google AdSense widget
 =====================
 
@@ -58,13 +62,19 @@ Usage
 Once the extension is installed and configured, simply use it in your code like this:
 
 ```php
-<?= \geertw\Yii2\Adsense\AdsenseWidget::widget(); ?>
+<div style="width: 728px; height: 90px">
+    <?= \geertw\Yii2\Adsense\AdsenseWidget::widget(); ?>
+</div>
+
 ```
 
 If you want a non-default slot ID, or when you want to change other settings, use:
 
 ```php
-<?= \geertw\Yii2\Adsense\AdsenseWidget::widget(['slot' => '9012345678']); ?>
+<div style="width: 728px; height: 90px">
+    <?= \geertw\Yii2\Adsense\AdsenseWidget::widget(['slot' => '9012345678']); ?>
+</div>
+
 ```
 
 Configuration options
