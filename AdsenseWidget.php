@@ -106,8 +106,8 @@ class AdsenseWidget extends \yii\base\Widget {
 
         if ($this->enabled == true) {
             // Return Google AdSense code
-            $code = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>';
-            $code .= "\n<ins class=\"adsbygoogle\"";
+            $this->view->registerJsFile('//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js', ['async' => 'async']);
+            $code = "\n<ins class=\"adsbygoogle\"";
             $code .= ' style="display:block"';
             $code .= ' data-ad-client="' . Html::encode($this->client) . '"';
             $code .= ' data-ad-slot="' . Html::encode($this->slot) . '"';
